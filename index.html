@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raleigh Custom Home Builders | Build Your Dream Home</title>
     <meta name="description" content="Premium custom home builders in Raleigh, NC. Offering free consultations, smart home technology, and full-service builds.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-white text-gray-900">
     <!-- Header -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-gray-800 hover:text-gray-700 transition-colors duration-300">
+                <a href="https://Hidden-Knowledge.github.io/raleigh-custom-home-builders-2025-05-16-1vj8o" class="text-2xl font-bold text-gray-800 hover:text-gray-700 transition-colors duration-300">
                     RCHB
                 </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a>
                     <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
                 </div>
-                <a href="https://rchb.com" class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <a href="#contact" class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
                     Get Started
                 </a>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <a href="#features" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded transition-colors duration-300">About</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -34,17 +60,17 @@
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                    Build Your Dream Home in Raleigh, NC
+                    Transform Your Vision into Reality with Raleigh's Premier Custom Home Builders
                 </h1>
                 <p class="text-xl text-gray-600 mb-10 leading-relaxed">
-                    Experience luxury custom home building with Raleigh's premier builders. We bring your vision to life with precision, innovation, and dedication.
+                    Experience the perfect blend of luxury, innovation, and craftsmanship. Our award-winning team brings over 25 years of expertise to create your dream home with unparalleled attention to detail and sustainable building practices.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://rchb.com" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
-                        Start Your Journey
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Schedule Free Consultation
                     </a>
-                    <a href="#features" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-50 border-2 border-blue-600 transform hover:scale-105 transition-all duration-300">
-                        Learn More
+                    <a href="#features" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-50 border-2 border-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Explore Our Services
                     </a>
                 </div>
             </div>
@@ -56,31 +82,31 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Premium Building Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 transform hover:rotate-12 transition-transform duration-300">
                         <i class="fas fa-comments text-2xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Free Consultation</h3>
+                    <h3 class="text-xl font-bold mb-4">Personalized Consultation</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Begin your journey with a complimentary consultation to discuss your vision and requirements.
+                        Start with a comprehensive consultation where we discuss your vision, budget, and timeline. Our experts will guide you through every aspect of the custom home building process, ensuring your dream home becomes reality.
                     </p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 transform hover:rotate-12 transition-transform duration-300">
                         <i class="fas fa-microchip text-2xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Smart Technology</h3>
+                    <h3 class="text-xl font-bold mb-4">Smart Home Integration</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Integrate cutting-edge smart home features for modern, efficient living.
+                        Experience next-level living with integrated smart home technology. From automated climate control to advanced security systems and voice-activated features, we create homes that are both intelligent and efficient.
                     </p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 transform hover:rotate-12 transition-transform duration-300">
                         <i class="fas fa-home text-2xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Full-Service Builds</h3>
+                    <h3 class="text-xl font-bold mb-4">Comprehensive Build Service</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Comprehensive building services from foundation to finishing touches.
+                        Our full-service approach covers everything from initial design to final walkthrough. With dedicated project managers, skilled craftsmen, and quality materials, we ensure exceptional results at every stage of construction.
                     </p>
                 </div>
             </div>
@@ -92,27 +118,115 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="text-center transform hover:scale-105 transition-all duration-300">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <i class="fas fa-clock text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Save Time</h3>
-                    <p class="text-gray-600">Efficient project management and streamlined building process.</p>
+                    <h3 class="text-xl font-bold mb-4">Efficient Timeline</h3>
+                    <p class="text-gray-600">Our streamlined process and experienced team ensure your project stays on schedule without compromising quality. Average completion time of 8-12 months.</p>
                 </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="text-center transform hover:scale-105 transition-all duration-300">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <i class="fas fa-chart-line text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Build Equity</h3>
-                    <p class="text-gray-600">Create lasting value with quality custom construction.</p>
+                    <h3 class="text-xl font-bold mb-4">Investment Value</h3>
+                    <p class="text-gray-600">Our homes consistently outperform market averages with premium features and energy-efficient designs that deliver long-term value.</p>
                 </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div class="text-center transform hover:scale-105 transition-all duration-300">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <i class="fas fa-user-check text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Personalized Process</h3>
-                    <p class="text-gray-600">Tailored approach to meet your specific needs and preferences.</p>
+                    <h3 class="text-xl font-bold mb-4">Customized Experience</h3>
+                    <p class="text-gray-600">Every client receives personalized attention with dedicated project managers and regular updates throughout the building process.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"RCHB transformed our vision into reality. Their attention to detail and integration of smart home technology exceeded our expectations. Our energy bills are 40% lower than our previous home."</p>
+                    <div class="font-semibold">
+                        <p class="text-gray-800">Michael Thompson</p>
+                        <p class="text-gray-600 text-sm">Tech Executive, Apple</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The team at RCHB was professional from start to finish. They completed our 4,000 sq ft custom home on schedule and within budget. The quality craftsmanship is evident in every detail."</p>
+                    <div class="font-semibold">
+                        <p class="text-gray-800">Sarah Martinez</p>
+                        <p class="text-gray-600 text-sm">Interior Designer</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Working with RCHB was a dream. Their sustainable building practices and energy-efficient designs aligned perfectly with our values. We couldn't be happier with our new home."</p>
+                    <div class="font-semibold">
+                        <p class="text-gray-800">David Wilson</p>
+                        <p class="text-gray-600 text-sm">Environmental Consultant</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The custom features and attention to detail in our home are incredible. RCHB's team made the entire process smooth and stress-free. We recommend them to everyone!"</p>
+                    <div class="font-semibold">
+                        <p class="text-gray-800">Jennifer Chen</p>
+                        <p class="text-gray-600 text-sm">Healthcare Executive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <p class="text-gray-600 leading-relaxed">
+                    Founded in 1998, Raleigh Custom Home Builders began with a vision to create exceptional homes that reflect the unique character and lifestyle of each client. Our founder, James Mitchell, started the company after 15 years of experience in luxury home construction, bringing together a team of the most talented architects, designers, and craftsmen in the region.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Our mission is to deliver unparalleled quality and innovation in custom home building while maintaining the highest standards of sustainability and energy efficiency. We believe in creating homes that not only meet our clients' dreams but exceed their expectations in every way. Our core values of integrity, craftsmanship, and client satisfaction guide every project we undertake.
+                </p>
             </div>
         </div>
     </section>
@@ -122,30 +236,43 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold mb-3">How long does the building process take?</h3>
-                    <p class="text-gray-600">Typically, a custom home build takes 8-12 months, depending on complexity and size.</p>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">What is your typical home building timeline?</h3>
+                    <p class="text-gray-600">Our custom homes typically take 8-12 months to complete, depending on size and complexity. This includes 2-3 months for design and permitting, followed by 6-9 months of construction. We provide detailed timelines during initial consultation.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold mb-3">What is your service area?</h3>
-                    <p class="text-gray-600">We serve the greater Raleigh area, including surrounding communities within a 50-mile radius.</p>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">What areas do you serve in Raleigh?</h3>
+                    <p class="text-gray-600">We serve the entire Greater Raleigh area, including North Hills, Cary, Wake Forest, Apex, and surrounding communities within a 50-mile radius. Each area has specific building codes and requirements that we're well-versed in.</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow duration-300">
-                    <h3 class="text-lg font-semibold mb-3">Do you handle permits and approvals?</h3>
-                    <p class="text-gray-600">Yes, we manage all necessary permits, inspections, and regulatory approvals.</p>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">What is your warranty coverage?</h3>
+                    <p class="text-gray-600">We offer a comprehensive 10-year structural warranty, 5-year systems warranty, and 2-year workmanship warranty. All appliances and fixtures are covered by manufacturer warranties, which we help manage.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">What is the typical cost per square foot?</h3>
+                    <p class="text-gray-600">Custom home costs typically range from $200-$400 per square foot, depending on finishes and features. We provide detailed cost breakdowns during the planning phase and work with you to optimize your budget.</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300 transform hover:scale-102">
+                    <h3 class="text-lg font-semibold mb-3">Do you handle all permits and approvals?</h3>
+                    <p class="text-gray-600">Yes, we manage all necessary permits, inspections, and regulatory approvals. Our team has extensive experience with local building codes and maintains strong relationships with municipal authorities.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-blue-600 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Start Your Dream Home Journey?</h2>
-            <p class="text-xl mb-10 opacity-90">Contact us today for your free consultation</p>
-            <a href="mailto:info@rchb.com" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 inline-block">
-                Contact Us Now
-            </a>
+    <section id="contact" class="py-24 bg-blue-600 text-white" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center;">
+        <div class="container mx-auto px-6 text-center bg-blue-600/90 py-16 rounded-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Build Your Dream Home?</h2>
+            <p class="text-xl mb-10 opacity-90">Schedule your free consultation today and take the first step towards your custom home</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:info@rchb.com" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 inline-block shadow-lg hover:shadow-xl">
+                    Email Us Now
+                </a>
+                <a href="tel:+19195550123" class="bg-transparent text-white px-8 py-4 rounded-full text-lg font-semibold border-2 border-white hover:bg-white hover:text-blue-600 transform hover:scale-105 transition-all duration-300 inline-block">
+                    Call (919) 555-0123
+                </a>
+            </div>
         </div>
     </section>
 
@@ -155,20 +282,27 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-6">RCHB</h3>
-                    <p class="mb-6">Building dreams into reality in Raleigh, NC.</p>
+                    <p class="mb-6">Building dreams into reality in Raleigh, NC since 1998.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-white transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-300 transform hover:scale-110"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
                     <ul class="space-y-3">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Our Process</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Portfolio</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Our Process</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="https://Hidden-Knowledge.github.io/raleigh-custom-home-builders-2025-05-16-1vj8o/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://Hidden-Knowledge.github.io/raleigh-custom-home-builders-2025-05-16-1vj8o/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Hidden-Knowledge.github.io/raleigh-custom-home-builders-2025-05-16-1vj8o/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div>
@@ -176,15 +310,8 @@
                     <ul class="space-y-3">
                         <li><i class="fas fa-envelope mr-2"></i> info@rchb.com</li>
                         <li><i class="fas fa-phone mr-2"></i> (919) 555-0123</li>
-                        <li><i class="fas fa-map-marker-alt mr-2"></i> Raleigh, NC</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Builder Way, Raleigh, NC 27601</li>
                     </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-6">Newsletter</h4>
-                    <form class="space-y-4">
-                        <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500">
-                        <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Subscribe</button>
-                    </form>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
@@ -192,5 +319,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
