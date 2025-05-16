@@ -1,0 +1,27 @@
+# Declare permissions for AI LLM crawlers
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: AmazonBot
+Allow: /
+
+Sitemap: https://hidden-knowledge.github.io/raleigh-custom-home-builders-2025-05-16-1vj8o/sitemap.xml
